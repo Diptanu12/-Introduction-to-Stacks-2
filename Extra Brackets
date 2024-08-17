@@ -1,0 +1,58 @@
+Extra Brackets
+You are given a string exp representing an expression. Assume that the expression is balanced i.e. the opening and closing brackets match with each other.
+
+But, some pair of brackets maybe extra/needless. You are required to find out if there are extra brackets or not.import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+
+class Solution {
+    public boolean ExtraBrackets(String exp) {
+        // Write your code here
+       
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String exp = br.readLine();
+	    Solution Obj = new Solution();
+        if(Obj.ExtraBrackets(exp))
+            System.out.println("true");
+        else
+            System.out.println("false");
+    }
+}
+
+Note: This expression only contains round brackets '(' and ')'. You need not worry about the other type of brackets
+
+Input Format
+First line contains the string exp
+
+Output Format
+Complete the function ExtraBrackets() and return true or false according to the question.
+
+Example 1
+Input
+
+((a + b) + (c + d))
+Output
+
+false
+Example 2
+Input
+
+(a + b) + ((c + d))
+Output
+
+true
+Constraints
+1 <= exp.size() <= 10000
+
+Topics
+Strings
+Stacks
+
+
+
